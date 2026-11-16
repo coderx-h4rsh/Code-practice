@@ -124,7 +124,7 @@
            case 4 :
                System.out.println("You ordered a Pizza.");
                break;
-      }*/
+      }
 
      // practice question
 
@@ -137,6 +137,136 @@
        System.out.println("Weird");
      } else {
        System.out.println("Not Weird");
-     }
+     }*/
+
+    // November 16, 2026
+
+    /*int n = 33;
+    if(n%2 == 0) {
+        System.out.println("The given number is Even.");
+    } else {
+        System.out.println("The given number is Odd.");
+    }*/
+
+    /*int age = 18;
+    if(age >= 18) {
+        System.out.println("You are eligible to Vote.");
+    } else {
+        System.out.println("You are not eligible to Vote.");
+    }*/
+
+    /*int p = 96;
+     int c = 95;
+     int m = 98;
+
+     int avg = (p + c + m) / 3;
+
+        if(avg >= 40) {
+            System.out.println("You are PASSED.");
+        } else {
+            System.out.println("You are FAILED.");
+        }*/
+
+     /*float pt = 94.17f;
+      
+     if(pt > 90) {
+        System.out.println("Grade A+");
+     } else if (pt < 89 && pt >= 80) {
+        System.out.println("Grade A");
+     } else if (pt < 79 && pt >= 70) {
+        System.out.println("Grade B");
+     } else if (pt < 69 && pt >= 60){
+        System.out.println("Grade C");
+     } else if (pt < 59 && pt >= 50) {
+        System.out.println("Grade D");
+     } else {
+        System.out.println("Failed");
+     }*/
+
+        /*int u = 28;
+        int b = 0;
+
+        if (u <= 100) {
+            b = u*5;
+        } else if (u > 100 && u <= 200) {
+            b = ((u-100)*7) + 500;
+        } else if (u > 200) {
+            b = ((u-200)*10) + 1200;
+        }
+            System.out.println("Your Electricity Bill is " + b + "$"); */
+
+        /*int x = 2;
+        int y = -3;
+
+        if (x > 0 && y > 0) {
+            System.out.println("The given point lies in the first quadrant.");
+        } else if (x < 0 && y > 0) {
+            System.out.println("The given point lies in the second quadrant.");
+        } else if (x < 0 && y < 0) {
+            System.out.println("The given point lies in the third quadrant.");
+        } else if (x > 0 && y <0) {
+            System.out.println("The given point lies in the fourth quadrant.");
+        } else if (x == 0) {
+            System.out.println("The given point lies on the y-axis.");
+        } else if (y == 0) {
+            System.out.println("The given point lies on the x-axis.");
+        } else {
+            System.out.println("The given point is on the origin.");
+        } */
+
+        /*int day = 1;
+        switch(day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+                case 2:
+                    System.out.println("Tuesday");
+                    break;
+                    case 3:
+                        System.out.println("Wednesday");
+                        break;
+                        case 4:
+                            System.out.println("Thrusday");
+                            break;
+                            case 5:
+                                System.out.println("Friday");
+                                break;
+                                case 6:
+                                    System.out.println("Saturday");
+                                    break;
+                                    case 7:
+                                        System.out.println("Sunday");
+                                        break;
+                                        default:
+                                            System.out.println("The number is invalid.");
+                                            break;
+        }*/
+
+        /*int x = 2;
+        int y =17;
+        int z = 0;
+
+        int op = 66;
+        switch(op) {
+            case 1:
+                z = x+y;
+                break;
+                case 2:
+                    z = x-y;
+                    break;
+                    case 3:
+                        z = x*y;
+                        break;
+                        case 4:
+                            z = x/y;
+                            break;
+                            case 5:
+                                z = x%y;
+                                break;
+                                default:
+                                    System.out.println("Invalid Operation.");
+                                    break;
+        }
+        System.out.println(z);*/
     }
 }

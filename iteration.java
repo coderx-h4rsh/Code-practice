@@ -73,7 +73,7 @@ public class iteration {
         for (int j = 1; j <= i; j++) {
             System.out.print("*");
         } System.out.println();
-      }*/
+      }
 
      // printing a right triangle of numbers 
 
@@ -82,5 +82,94 @@ public class iteration {
                 System.out.print(j);
             } System.out.println();
         } 
+
+        // 17 november
+
+        // printing sum of digits of a given number
+        int n = 3346;
+        int sum = 0;
+
+        while(n>0) {
+           int dig = n%10;
+           sum = sum + dig;
+            n/=10;
+        }
+         System.out.println(sum);
+
+         // printing given number with reversed digits
+        int num = 19112023;
+        int dig = 0;
+
+        while(num > 0) {
+            dig = num % 10;
+            num /= 10;
+            System.out.print(dig);
+        }
+
+            // printing factorial of a given number
+            int fac = 1;
+        for(int i = 11; i > 0; i--) {
+            fac = fac*i;
+        }
+        System.out.println(fac);
+        // printing factors and number if factors of a given number
+        int n = 18;
+        int count = 0;
+        for(int i = 1; i <= n; i++) {
+            if(n%i == 0) {
+                System.out.print(i + " ");
+                count++;}
+        } System.out.println("The number of factors of the given number is " + count); 
+
+        // printing a star square 
+        int n = 6;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        } 
+
+            // printing a nummber triangle
+            int n = 5;
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        } 
+
+            // printing multiplication table of numbers from 1 to n
+            int n = 5;
+        for(int i = 1; i <= n; i++) {
+            for(int j = 1; j<=10; j++) {
+                System.out.print(i*j + " ");
+            }
+            System.out.println();
+        }
+
+            // checking whether the number is prime or not
+         int n = 19;
+         boolean isP = true;
+
+         for(int i = 2; i < n; i++) {
+            if(n % i == 0){
+                isP = false;
+                break;
+            }
+         }
+
+         if(isP == true) {
+            System.out.println("The given number is a Prime Number.");
+         } else {
+            System.out.println("The given number is not Prime Number.");
+         } 
+
+            // printing numbers from 1 to 50 skkiping divisible of 3&5
+            for(int i = 1; i <= 50; i++) {
+                if(i % 3 == 0 || i % 5 == 0) continue;
+                System.out.print(i + " ");
+            }*/
+
     }
 }

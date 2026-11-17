@@ -90,7 +90,7 @@ public class revision {
             System.out.println("z lies between 20 and 30");
         } else {
             System.out.println("z is greater than 30");
-        }*/
+        }
 
 
         int w = 45;
@@ -107,5 +107,44 @@ public class revision {
                     default :
                     System.out.println("Not in range.");
         }
+
+        //Iteration & Jump Statment
+
+        int i = 1;
+        while(i<=10) {
+            System.out.println(i);
+            i++;
+        }
+
+        int i = 1;
+        do{
+            System.out.println(i);
+            i++;
+        } while(i <= 10);
+
+        for(int i = 1; i<=10; i++) {
+            System.out.println(i);
+        }
+
+        for(int i = 1; i <= 5; i++) {
+            for(int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for(int i = 0; i<=20; i++) {
+            if(i%2 == 0) continue;
+            if(i > 15) break;
+            System.out.println(i);
+        }*/
+
+            int n = 0;
+        do{
+            System.out.println("Square");
+            n++;
+        } while(n <= 20);
+            
+        
     }
 }

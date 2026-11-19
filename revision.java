@@ -1,6 +1,6 @@
-public class revision {
+/* public class revision {
     public static void main(String[] args) {
-     /*    // Explicit Conversion 
+        // Explicit Conversion 
        int i = 33;
        byte j;
        j = (byte)i;
@@ -137,14 +137,60 @@ public class revision {
             if(i%2 == 0) continue;
             if(i > 15) break;
             System.out.println(i);
-        }*/
+        }
 
             int n = 0;
         do{
             System.out.println("Square");
             n++;
-        } while(n <= 20);
+        } while(n <= 20); 
+    }
+}*/
+
+public class revision {
+    public static void main(String[] args) {
+        /*int[] a = new int[7];
+        // array[0] --> first elemnt, array[1] --> second element, array[2] --> third element
+        a[0] = 101;
+        a[1] = 102;
+        a[2] = 103;
+
+        System.out.println(array[2]);
+
+        int n = 101;
+        for(int i = 0; i < a.length; i++) {
+            a[i] = n;
+            n++;
+        }
+        for(int j = 0; j < a.length; j++) {
+            System.out.println(a[j]);
+        }
+
+            int[][] m = new int[3][4];
+
+            int n = 101;
+            for(int i = 0; i < m.length; i++) {
+                for(int j = 0; j < m[i].length; j++) {
+                    m[i][j] = n;
+                    n++;
+                    System.out.print(m[i][j] + " ");
+                }
+                System.out.println();
+            }
+            int[] a = {101, 102, 103, 104, 105};
+            System.out.println(a[4]); */
+
+            int[][] b = {
+                {101, 103, 105, 107},
+                {102, 104, 106, 108},
+                {109, 111, 113, 115},
+            };
+            for(int i = 0; i < b.length; i++) {
+                for(int j = 0; j < b[i].length; j++) {
+                    System.out.print(b[i][j] + " ");
+                }
+                System.out.println();
+            }
             
-        
     }
 }

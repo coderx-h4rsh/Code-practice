@@ -146,10 +146,9 @@ public class iteration {
                 System.out.print(i*j + " ");
             }
             System.out.println();
-        }
-
+        } 
             // checking whether the number is prime or not
-         int n = 19;
+         int n = 1781;
          boolean isP = true;
 
          for(int i = 2; i < n; i++) {
@@ -163,9 +162,9 @@ public class iteration {
             System.out.println("The given number is a Prime Number.");
          } else {
             System.out.println("The given number is not Prime Number.");
-         } 
+         }
 
-            // printing numbers from 1 to 50 skkiping divisible of 3&5
+            //printing numbers from 1 to 50 skkiping divisible of 3&5
             for(int i = 1; i <= 50; i++) {
                 if(i % 3 == 0 || i % 5 == 0) continue;
                 System.out.print(i + " ");

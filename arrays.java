@@ -105,8 +105,7 @@ public class arrays {
                 }
                 System.out.println();
             }System.out.println("The sum of all elements of the given array is " + sum);
-             System.out.println("sumR1 = " + sumR1 + " sumR2 = " + sumR2 + " sumR3 = " + sumR3 ); */
-
+             System.out.println("sumR1 = " + sumR1 + " sumR2 = " + sumR2 + " sumR3 = " + sumR3 ); 
             int[][] array = new int[3][3];
 
             for(int i = 0; i < array.length; i++) {
@@ -118,5 +117,147 @@ public class arrays {
                     System.out.println();
             } 
 
+        // 19 november
+
+        // finnding sum and average of all elements of given array.
+        int[] a = {109, 778, 453, 18};
+        int sum = 0;
+        float avg = 0f;
+        for(int i = 0; i < a.length; i++){
+            sum += a[i];
+        }
+        System.out.println("The sum of all elemnts of array a is " + sum);
+        avg = (float) sum/ a.length;
+
+        System.out.println("The average of all the elemnts of the given array is " + avg);
+
+        int[][] b = {
+            {19, 11, 20, 23},
+            {24, 12, 20, 07},
+            {05, 11, 19, 88},
+        };
+
+        int sum = 0;
+        float avg = 0f;
+
+        for(int i = 0; i < b.length; i++) {
+            for(int j = 0; j < b[i].length; j++) {
+                sum += b[i][j];
+            }
+            avg = (float) sum/ (b.length * b[i].length);
+        }
+        System.out.println("The sum of all the elements of the given array is " + sum);
+        System.out.println("The average of all elemnts of the given array is " + avg); 
+        
+        // finding the smallest and the largest element of a given array
+        int[] a = {110, 776, 893, 554, 220, 91};
+
+        int min = a[0];
+        int max = a[0];
+
+        for(int i = 0; i < a.length; i++) {
+            if(a[i] < min) 
+                min = a[i];
+
+            if(a[i] > max)
+                max = a[i];
+        }
+
+        System.out.println("The smallest element of the given array is " + min);
+        System.out.println("The largest element of the given array is " + max); 
+
+        int[][] b = {
+            {19, -76, 33, -30},
+            {22, 991, -880, 331},
+            {208, 183, 264, -101},
+        };
+
+        int min = b[0][0];
+        int max = b[0][0];
+
+        for(int i = 0; i < b.length; i++) {
+            for(int j = 0; j < b[i].length; j++) {
+                if(b[i][j] < min)
+                    min = b[i][j];
+
+                if(b[i][j] > max)
+                    max = b[i][j];
+            }
+        }
+        System.out.println("The smallest element of the given array is " + min);
+        System.out.println("The largest element of the given array is " + max); 
+
+        // finnding the number of odd and even elements in the given array
+
+        int[][] a = {
+            {91, 27, 83},
+            {47, 98, 76},
+            {88, 34, 17},
+            {04, 16, 43},
+        };
+
+            int odd = 0;
+            int even = 0;
+
+        for(int i = 0; i < a .length; i++) {
+            for(int j = 0; j < a[i].length; j++) {
+                if(a[i][j] % 2 == 0)
+                    even++;
+                else{
+                    odd++;
+                }
+            }
+        }
+        System.out.println("The number of Even elemnts is " + even + " and the number of Odd elements is " + odd); 
+
+        // printing the elemnts present on even indices only
+        int[][] a = {
+            {91, 27, 83},
+            {47, 98, 76},
+            {88, 34, 17},
+            {04, 16, 43},
+        };
+
+        for(int i = 0; i < a.length; i+=2) {
+            for(int j = 0; j < a[i].length; j+=2) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        } 
+
+        // printing a given array with reversed elements
+
+        int[] a = {109, 778, 453, 18};
+
+        for(int i = (a.length-1); i >= 0; i--) {
+            System.out.print(a[i] + " ");
+        } 
+
+        int[][] b = {
+            {19, -76, 33, -30},
+            {22, 991, -880, 331},
+            {208, 183, 264, -101},
+        };
+
+        /* for(int i = (b.length - 1); i >= 0; i--) {
+            for(int j = (b[i].length - 1); j >= 0; j--) {
+                System.out.print(b[i][j] + " ");
+            }
+            System.out.println();
+        } 
+
+        for(int i = (b.length - 1); i >= 0; i--) {
+            for(int j = 0; j < b[i].length; j++) {
+                System.out.print(b[i][j] + " ");
+            }
+            System.out.println();
+        } 
+
+        for(int i = 0; i < b.length; i++) {
+            for(int j = (b[i].length - 1); j >= 0; j--) {
+                System.out.print(b[i][j] + " ");
+            }
+            System.out.println();
+        } */
     }
 }

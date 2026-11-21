@@ -192,7 +192,7 @@ public class revision {
                 System.out.println();
             } 
     }
-} */
+} 
 
     public class revision {
         public static void main(String[] args) {
@@ -235,4 +235,31 @@ public class revision {
         }
     }
 // static --> to call function without creating a class
-// return --> data type returned by the function(void if there's no return)
+// return --> data type returned by the function(void if there's no return) */
+
+public class revision {
+    public static void main(String[] args) {
+        /*fun1();
+        System.out.println("Harsh");*/
+        
+       printNum(20); 
+    }
+    /*static void fun1() {
+        fun2();
+        System.out.println("is");
+    }
+    static void fun2() {
+        fun3();
+        System.out.println("name");
+    }
+    static void fun3() {
+        System.out.println("My");
+    }*/
+
+    // recursion (a function calling itself)
+    static void printNum(int n) {
+        if (n == 0) return;      // base case (tells when to end the recursion)
+        printNum(n-1);           // recursive call (builds the recursion)
+        System.out.println(n);
+    }
+}

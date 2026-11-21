@@ -145,7 +145,7 @@
             n++;
         } while(n <= 20); 
     }
-}*/
+}
 
 public class revision {
     public static void main(String[] args) {
@@ -178,7 +178,7 @@ public class revision {
                 System.out.println();
             }
             int[] a = {101, 102, 103, 104, 105};
-            System.out.println(a[4]); */
+            System.out.println(a[4]); 
 
             int[][] b = {
                 {101, 103, 105, 107},
@@ -190,7 +190,49 @@ public class revision {
                     System.out.print(b[i][j] + " ");
                 }
                 System.out.println();
-            }
-            
+            } 
     }
-}
+} */
+
+    public class revision {
+        public static void main(String[] args) {
+           // System.out.println(sum(22, 44));
+           //intro();
+           //greet("Harsh");
+           //System.out.println(age());
+
+           System.out.println(mul(48.91f,77.33f));
+           System.out.println(mul(77, 89, 33));
+        }
+        static int sum (int a, int b) {
+            int result = a + b;
+            return result;
+        }
+        // no input no output
+        static void intro() {
+            System.out.println("Hi, Myself Harsh.");
+            return;
+        }
+
+        // input no output
+        static void greet(String n) {
+            System.out.println("Hello " + n);
+            return;
+        }
+
+        // no input but output
+        static int age() {
+            return 18;
+        }
+
+        // both input and output
+        static float mul(float x, float y) {
+            return (x * y); 
+        }
+
+        static int mul(int x, int y, int z) {
+            return (x * y);
+        }
+    }
+// static --> to call function without creating a class
+// return --> data type returned by the function(void if there's no return)

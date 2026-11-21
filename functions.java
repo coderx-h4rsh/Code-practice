@@ -1,4 +1,4 @@
-public class functions {
+/*public class functions {
     public static void main(String[] args) {
 
         // info();
@@ -12,7 +12,7 @@ public class functions {
         /*int c = sq(33);
         System.out.println(c);*/
         /*int v = fac(5);
-        System.out.println(v);*/
+        System.out.println(v);
 
         //System.out.println(add(89, 93));
         //System.out.println(add(33.33, 87.904, 59.441));
@@ -113,4 +113,134 @@ public class functions {
         return ((base * height) /  2);
     }
 
+}*/
+
+public class functions {
+    public static void main(String[] args) {
+        //num(918);
+        //comp(99, 42);
+        //comp(29, 97, 43);
+        //System.out.println(fac(6));
+        //isPrime(17);
+        //sum(89754);
+        //rev(6754);
+        //area(45);
+        //area(13, 58);
+        //area(7.77f);
+        //chk(121);
+    }
+
+    /* finnding a number is either odd or even
+    static void num(int n) {
+        if( n % 2 == 0) {
+            System.out.println("The given number is Even.");
+        }
+        else {
+            System.out.println("The given numbber is Odd.");
+        }
+        return;
+
+    // finding the greater number from a given set of integer
+    static void comp(int x, int y) {
+        if(x > y) {
+            System.out.println("The greater Number is " + x);
+        } else {
+            System.out.println("The greater number is " + y);
+        }
+        return;
+    } 
+    
+    static void comp(int x, int y, int z) {
+        if(x > y && x > z) {
+            System.out.println("The largest number is " + x);
+        } else if (y > x && y > z) {
+            System.out.println("The largest number is " + y);
+        } else {
+            System.out.println("The largest number is " + z);
+        }
+        return;
+        } 
+
+    // finnding factorial of a given number
+    static long fac(int a) {
+        long ans = 1;
+        for(int i = a; i > 0; i--) {
+            ans *= i;
+        }
+        //System.out.println("The factorial of given number is " + ans);
+        return ans;
+    } 
+    // finding if the given number is prime or not 
+    static void isPrime(int n) {
+        boolean isp = true;
+        for(int i = 2; i < n; i++) {
+            if(n % i == 0) 
+            isp = false;
+        }
+        if(isp == false) {
+            System.out.println("The given number is not a Prime Number.");
+        } else {
+            System.out.println("The given number is a Prime Number.");
+        }
+        return;
+    } 
+
+    // finding sum of digits of the given number
+    static void sum (int n) {
+       int sum = 0;
+
+        while(n>0) {
+           int dig = n % 10;
+           sum = sum + dig;
+           n /= 10;
+        }
+         System.out.println("The sum of all the digits of the given number is " + sum);
+    } 
+
+    // writing given number in reverse
+    static void rev(int n) {
+        int dig = 0;
+        while(n > 0) {
+            dig = n % 10;
+            n /= 10;
+            System.out.print(dig); 
+        }
+        System.out.println();
+    }
+
+    // area calculator(Function overloading)
+    static void area(int n) {
+        int area = (n * n);
+        System.out.println("The area of square of sides " + n + " is " + area + " sq units.");
+    }
+
+    static void area(int l, int b) {
+        int area = (l * b);
+        System.out.println("The area of rectangle with length " + l + " and braedth " + b + " is " + area + " sq units.");
+    }
+
+    static void area(float r) {
+        float area = (float)(3.14 * r * r);
+        System.out.println("The area of circle with radius " + r + " is " + area + " sq units.");
+    } 
+
+    // checking whether the given number is a palindrome or not 
+       static boolean chk(int num) {
+        int original = num;
+        int reverse = 0;
+
+        while (num > 0) {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num = num / 10;
+        }
+
+        return original == reverse;
+
+        if (chk(num)) {
+            System.out.println("Palindrome Number");
+        } else {
+            System.out.println("Not a Palindrome Number");
+        }
+    }*/
 }
